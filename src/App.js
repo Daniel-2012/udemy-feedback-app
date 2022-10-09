@@ -1,3 +1,4 @@
+import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import FeedbackForm from "./components/FeedbackForm"
 import FeedbackList from "./components/FeedbackList"
@@ -26,7 +27,10 @@ const App = () => {
           }>
           </Route>
           
-          <Route path='/about' element = {<AboutPage/>}/>
+          <Route path='/about' element = {
+            <AboutPage/>
+          }
+        />
 
         </Routes>
           <AboutIconLink/>
